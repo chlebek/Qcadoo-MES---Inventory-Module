@@ -39,6 +39,7 @@
 		<menu:menu-item name="inventory" category="inventory"
 			view="inventory" />
 
+                <view:view resource="view/transfersDetail.xml" />
 		<view:view resource="view/transfers.xml" />
 		<view:view resource="view/corrections.xml" />
 		<view:view resource="view/inventory.xml" />
