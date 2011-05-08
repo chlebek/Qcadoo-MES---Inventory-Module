@@ -12,9 +12,19 @@
 			<component type="grid" name="inventory" reference="grid">
 				<option type="column" name="number" fields="number" link="true"
 					width="150" />
+				<option type="column" name="name" fields="name" link="true" />
+				<option type="column" name="type" fields="type" />
+				<option type="column" name="date" fields="date" />
+				<option type="column" name="product" fields="product"
+				expression="#product['name']" />
+				<option type="column" name="quantity" fields="quantity" />
+				<option type="column" name="staff" fields="staff"
+				expression="#staff['name']" />
 				<option type="order" column="name" direction="asc" />
 				<option type="searchable" value="number" />
 				<option type="orderable" value="number" />
+				<option type="correspondingView" value="inventory/transferDetails" />
+				<option type="correspondingComponent" value="form" />
 				<option type="fullscreen" value="true" />
 				<option type="multiselect" value="true" />
 			</component>
