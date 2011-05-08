@@ -7,6 +7,13 @@
 			<validatesLength max="40" />
 		</string>
 		<string name="name" required="true" />
+		<enum name="type" values="Movement,Consumption,Production" required="true">
+		</enum>
+		<datetime name="date" readonly="true" />
+		<belongsTo name="product" model="product" plugin="basic">
+		</belongsTo>
+		<decimal name="quantity" />
+		<belongsTo name="staff" model="staff" plugin="basic" />
 	</fields>
 	<hooks />
 	<identifier expression="#number + ' - ' + #name" />
